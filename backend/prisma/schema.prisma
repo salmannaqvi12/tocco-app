@@ -1,0 +1,46 @@
+// schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Product {
+  id                  Int       @id @default(autoincrement())
+  name                String
+  price               String
+  createdAt           DateTime  @default(now())
+  updatedAt           DateTime
+  productInfo         String?
+  productImage         String?
+  attachments         String[]
+  certifications      String[]
+  totalCarbonFootprint String?
+  reductionTargets    String?
+  reductionAchievements String?
+  conventionalLeather String?
+  bioBasedContent     String?
+  wasteReduction      String?
+  totalWaterConsumption String?
+  waterRecycled       String?
+  recylability        String?
+  mechanical          String?
+  chemical            String?
+  naturalComposable   String?
+  m1                  String?
+  m2                  String?
+  m3                  String?
+  m4                  String?
+  m5                  String?
+  m6                  String?
+  lca                 String[]
+  lcaDescription      String?
+  impactFacts0         String?
+  impactFacts1         String?
+  impactFacts2         String?
+}
+

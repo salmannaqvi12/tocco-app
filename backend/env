@@ -1,0 +1,6 @@
+DATABASE_URL="postgres://postgres:db@amc@localhost:5432/testDB"
+PORT=4000  
+accessKeyId="AKIA5DKKLRCLZQ4VUM6Q"
+secretAccessKey="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"
+
+
