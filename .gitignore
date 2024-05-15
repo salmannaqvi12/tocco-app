@@ -66,3 +66,4 @@ package.graphql.json
 *.tsbuildinfo
 next-env.d.ts
 >>>>>>> ec8a7165e46464662f74808cd15e06d51423fa87
+backend/env
